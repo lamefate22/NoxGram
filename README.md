@@ -56,6 +56,7 @@ NoxGram is built with a clean and decoupled architecture, making it easy to unde
     ```
 
 Using a virtual environment is not required, but is **highly recommended** to avoid affecting globally installed packages.
+Alternatively, you can download a pre-compiled binary for your platform from [Releases](https://github.com/lamefate22/NoxGram/releases).
 
 ## How to Use
 
@@ -75,8 +76,6 @@ Using a virtual environment is not required, but is **highly recommended** to av
 4.  **Select a Bot:**
     - After a successful login, NoxGram will display a list of all available bots found in the `data/bots` directory.
     - Select the bot you want to run. The bot will start and begin listening for Telegram events.
-
-Alternatively, you can download a pre-compiled binary for your platform from [Releases](https://github.com/lamefate22/NoxGram/releases).
 
 ## Creating Your Own Bot
 
