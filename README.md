@@ -76,7 +76,7 @@ Using a virtual environment is not required, but is **highly recommended** to av
     - After a successful login, NoxGram will display a list of all available bots found in the `data/bots` directory.
     - Select the bot you want to run. The bot will start and begin listening for Telegram events.
 
-This password is used to secure your session file and will be required every time you log in with this account.
+Alternatively, you can download a pre-compiled binary for your platform from [Releases](https://github.com/lamefate22/NoxGram/releases).
 
 ## Creating Your Own Bot
 
