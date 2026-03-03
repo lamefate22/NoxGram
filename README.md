@@ -36,7 +36,7 @@ NoxGram is built with a clean and decoupled architecture, making it easy to unde
 
 1.  **Clone the NoxGram repository:**
     ```bash
-    git clone https://your-repository-url/NoxGram.git
+    git clone https://github.com/lamefate22/NoxGram.git
     cd NoxGram
     ```
 2. **Use a virtual environment:**
@@ -65,10 +65,10 @@ Using a virtual environment is not required, but is **highly recommended** to av
     ```
 2.  **First-time Login:**
     - The application will ask if you want to use auto-login. Select `No` for the first time.
-    - Enter your phone number, `API_ID`, and `API_HASH`.
+    - Enter account phone number, `API_ID`, and `API_HASH`.
     - Enter the authorization confirmation code.
     - Enter 2FA account password if required.
-    - Enter your new encryption password.
+    - Enter new encryption password.
 3.  **Automatic Login:**
     - When you launch the application, select "Yes" when asked about automatic login.
     - Select the desired saved account and enter the encryption password.
