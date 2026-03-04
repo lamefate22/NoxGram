@@ -13,19 +13,19 @@ def setup_logger(slevel: str = "INFO", flevel: str = "DEBUG") -> Logger:
     logger.remove()
 
     logger.add(
-        sink=sys.stdout,
+        sys.stdout,
         level=slevel,
-        format="<cyan>{time:MMM D HH:mm:ss}</cyan> | <level>{level}</level> | <magenta>{name}.{function}():{line}</magenta> - {message}",
+        enqueue=True,
         colorize=True,
-        enqueue=True
+        format="<d>{time:HH:mm:ss}</d> <fg #6B7280>|</fg #6B7280> <fg #3B82F6>{level}</fg #3B82F6> <fg #6B7280>|</fg #6B7280> <fg #4B5563>{name}.{function}:{line}</fg #4B5563> <fg #6B7280>|</fg #6B7280> <fg #E5E7EB>{message}</fg #E5E7EB>"
     )
 
     logger.add(
-        sink="data/logs/log.nox",
+        "data/logs/log.txt",
+        enqueue=True,
         level=flevel,
-        format="{time:MMM D HH:mm:ss} | {level} | {name}:{function}:{line} - {message}",
         rotation="1 week",
-        enqueue=True
+        format="{time:HH:mm:ss} | {level} | {name}.{function}:{line} | {message}"
     )
 
     return logger
